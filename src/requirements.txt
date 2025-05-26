@@ -1,4 +1,5 @@
 pycryptodome
 pycryptodomex
 fastapi
-uvicorn 
+uvicorn
+mysql-connector-python

@@ -7,7 +7,7 @@ from src.main.services.attendance_service import AttendanceService
 
 import configparser
 config = configparser.ConfigParser()
-config.read(r"C:\Users\manish\Documents\python_programming\src\resources\config_file.ini")
+config.read(r"C:\Users\abdul\python_code\src\resources\config_file.ini")
 config.set("mysql_database","password", decrypt(config["mysql_database"]["password"]))
 
 
@@ -29,6 +29,6 @@ def login_logout(labour_id=None, first_name=None, last_name=None):
     return "Attendance recorded successfully."
 
 
-result = create_user("manish", "kumar", 500, "helper")
-logger.info(f"Labour added with Id {result}")
+# result = create_user("manish", "kumar", 500, "helper")
+# logger.info(f"Labour added with Id {result}")
 # print(login_logout(first_name="manish", last_name="kumar"))
